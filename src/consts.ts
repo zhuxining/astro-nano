@@ -9,7 +9,7 @@ export const SITE: Site = {
 };
 
 export const HOME: Metadata = {
-	TITLE: "Home",
+	TITLE: "NingXi's Blog",
 	DESCRIPTION: "Astro Nano is a minimal and lightweight blog and portfolio.",
 };
 
@@ -25,7 +25,8 @@ export const WORK: Metadata = {
 
 export const PROJECTS: Metadata = {
 	TITLE: "Projects",
-	DESCRIPTION: "A collection of my projects, with links to repositories and demos.",
+	DESCRIPTION:
+		"A collection of my projects, with links to repositories and demos.",
 };
 
 export const SOCIALS: Socials = [
