@@ -6,4 +6,5 @@ import { defineConfig } from "astro/config";
 export default defineConfig({
 	site: "https://ningxikeji.com",
 	integrations: [mdx(), sitemap(), tailwind()],
+	prefetch: { defaultStrategy: 'viewport'}
 });
