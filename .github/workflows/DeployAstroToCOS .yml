@@ -19,24 +19,31 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
+      - uses: pnpm/action-setup@v4
+        name: Install pnpm
+        with:
+          version: 8
+          run_install: false
+
+      - name: Install Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: latest
+          cache: 'pnpm'
 
       - name: Setup Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
-          python-version: 3.9
+          python-version: latest
 
       - name: Setup coscmd and sdk
         run: sudo pip install coscmd
 
       - name: Install dependencies
-        run: npm install
+        run: pnpm install
 
       - name: Build with Astro
-        run: npm run build
+        run: pnpm run build
 
       - name: Configure coscmd
         env:
