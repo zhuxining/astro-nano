@@ -9,9 +9,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["LXGW WenKai GB Screen", ...defaultTheme.fontFamily.sans],
-        serif: ["LXGW WenKai GB Screen", ...defaultTheme.fontFamily.serif],
-        mono: ["Fira Code","Menlo", "Consolas", ...defaultTheme.fontFamily.mono],
+        sans: ["LXGW WenKai TC,LXGW WenKai GB Screen", ...defaultTheme.fontFamily.sans],
+        serif: ["LXGW WenKai TC,LXGW WenKai GB Screen", ...defaultTheme.fontFamily.serif],
+        mono: ["LXGW WenKai Mono TC", "monospace", ...defaultTheme.fontFamily.mono],
       },
     },
   },

@@ -32,12 +32,22 @@ const { title, description, image = "/nano.png" } = Astro.props;
 <meta name="generator" content={Astro.generator} />
 
 <!-- Font preloads -->
+<link rel="preconnect" href="https://registry.npmmirror.com" crossorigin />
 <link
   rel="stylesheet"
   href="https://registry.npmmirror.com/lxgw-wenkai-screen-web/latest/files/style.css"
-  rel="preconnect"
-  rel="preload"
-  crossorigin
+/>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&display=swap"
+  rel="stylesheet"
+/>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&family=LXGW+WenKai+TC&display=swap"
+  rel="stylesheet"
 />
 
 <!-- Canonical URL -->
