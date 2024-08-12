@@ -9,8 +9,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["LXGW WenKai TC","LXGW WenKai", ...defaultTheme.fontFamily.sans],
-        serif: ["LXGW WenKai TC","LXGW WenKai", ...defaultTheme.fontFamily.serif],
+        sans: ["LXGW WenKai","LXGW WenKai TC", ...defaultTheme.fontFamily.sans],
+        serif: ["LXGW WenKai","LXGW WenKai TC", ...defaultTheme.fontFamily.serif],
         mono: ["LXGW WenKai Mono TC", "monospace", ...defaultTheme.fontFamily.mono],
       },
     },
