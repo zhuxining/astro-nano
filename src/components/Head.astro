@@ -35,19 +35,29 @@ const { title, description, image = "/nano.png" } = Astro.props;
 <link rel="preconnect" href="https://chinese-fonts-cdn.deno.dev" crossorigin />
 <link
   rel="stylesheet"
+  rel="preload"
   href="https://chinese-fonts-cdn.deno.dev/packages/lxgwwenkai/dist/LXGWWenKai-Regular/result.css"
+  as="font"
+  type="font/woff2"
+  font-display="swap"
 />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link
+  rel="stylesheet"
+  rel="preload"
   href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&display=swap"
-  rel="stylesheet"
+  as="font"
+  type="font/woff2"
+  font-display="swap"
 />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link
-  href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&family=LXGW+WenKai+TC&display=swap"
   rel="stylesheet"
+  rel="preload"
+  href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&family=LXGW+WenKai+TC&display=swap"
+  font-display="swap"
 />
 <!-- Umami URL -->
 <script
